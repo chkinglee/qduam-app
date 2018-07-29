@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lilinzhen.qduamapplication.HomePage.Sys.ProblemDetailActivity">
+    <data>
+        <variable
+            name="problem"
+            type="com.lilinzhen.qduamapplication.Bean.Sys.Problem"/>
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/project_body_background">
+
+        <LinearLayout
+            android:id="@+id/activity_problem_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/project_body_background"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourty_two"
+                android:background="@color/white"
+                android:text="@string/sys_problem"
+                android:textSize="@dimen/sixteen"
+                android:textColor="@color/view_textview_color"
+                android:gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/project_body_line_background"/>
+            <EditText
+                android:id="@+id/et_probelm"
+                android:minHeight="@dimen/four_hundred_and_thirty_nine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left"
+                android:text="@={problem.content}"
+                android:textColor="@color/view_edittext_text_color"
+                android:textSize="@dimen/fourteen"
+                android:hint="@string/sys_problem_temp"
+                android:textColorHint="@color/view_edittext_hint_color"
+                android:paddingLeft="@dimen/ten"
+                android:paddingTop="@dimen/ten"
+                android:paddingBottom="@dimen/ten"
+                android:paddingRight="@dimen/ten" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
+

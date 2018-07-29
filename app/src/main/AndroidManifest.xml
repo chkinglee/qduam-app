@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lilinzhen.qduamapplication">
+
+    <!-- 地图包、搜索包需要的基础权限 -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomePage.Main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomePage.LoginActivity" />
+        <activity android:name=".SuperClass.BaseActivity" />
+        <activity android:name=".SuperClass.MyAppCompatActivity" />
+        <activity android:name=".HomePage.User.UserModifyInformationActivity" />
+        <activity android:name=".Utils.AcquireMenuActivity" />
+        <activity android:name=".HomePage.User.UserModifyPasswordActivity" />
+        <activity android:name=".HomePage.Article.ArticleDetailActivity" />
+        <activity android:name=".HomePage.SelectPhoto.PhotoPagerActivity" />
+        <activity android:name=".HomePage.SelectPhoto.PhotoPickerActivity" />
+        <activity android:name=".HomePage.Article.ArticleAddActivity" />
+        <activity android:name=".HomePage.Assn.AssnManagementActivity" />
+        <activity android:name=".HomePage.Main.MainIndexActivity" />
+        <activity android:name=".HomePage.Main.MainControlActivity" />
+        <activity android:name=".HomePage.Main.MainMineActivity" />
+        <activity android:name=".HomePage.Assn.DirectorManagementActivity" />
+        <activity android:name=".HomePage.Assn.DepartManagementActivity" />
+        <activity android:name=".HomePage.Assn.AssnDetailActivity" />
+        <activity android:name=".HomePage.Assn.DepartDetailActivity" />
+        <activity android:name=".HomePage.Assn.DirectorDetailActivity" />
+        <activity android:name=".HomePage.Assn.DepartDMActivity" />
+        <activity android:name=".HomePage.Enroll.EnrollManagementActivity" />
+        <activity android:name=".HomePage.Article.ArticleManagementActivity" />
+        <activity android:name=".HomePage.Enroll.EnrollDetailActivity" />
+        <activity android:name=".HomePage.Assn.MemberManagementActivity" />
+        <activity android:name=".HomePage.Meeting.MeetingManagementActivity" />
+        <activity android:name=".HomePage.Meeting.MeetingDetailActivity" />
+        <activity android:name=".HomePage.Sys.GuideManagementActivity" />
+        <activity android:name=".HomePage.Sys.GuideDetailActivity" />
+        <activity android:name=".HomePage.Sys.ProblemManagementActivity" />
+        <activity android:name=".HomePage.Sys.ProblemDetailActivity" />
+        <activity android:name=".HomePage.Sys.AboutUsActivity" />
+        <activity android:name=".HomePage.Assn.MemberDetailActivity"></activity>
+    </application>
+
+</manifest>

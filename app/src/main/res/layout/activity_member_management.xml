@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lilinzhen.qduamapplication.HomePage.Assn.MemberManagementActivity">
+    <data>
+        <variable
+            name="adapter"
+            type="android.widget.BaseAdapter"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_member_management"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/project_body_background"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_view"
+            app:adapter="@{adapter}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="@integer/five_hundred_and_fifteen"
+            android:divider="#00000000"
+            android:listSelector="@android:color/transparent">
+        </ListView>
+
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3997F1</color>
+    <color name="colorPrimaryDark">#3997F1</color>
+    <color name="colorAccent">#3997F1</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <!--项目的大部分界面的标题的背景色-->
+    <color name="project_title_background">#3997F1</color>
+    <!--项目的大部分界面的body的背景色-->
+    <color name="project_body_background">#F2F2F2</color>
+    <!--项目的大部分界面的body中横线的背景色-->
+    <color name="project_body_line_background">#F2F2F2</color>
+    <!--radiobutton选中的颜色-->
+    <color name="radiobutton_checked_text_color">#3997F1</color>
+    <color name="radiobutton_unchecked_text_color">#395067</color>
+    <!--部分按钮的颜色-->
+    <color name="project_button">#06c1ae</color>
+
+
+    <color name="tablayout_defult_textcolor">#4A627A</color>
+    <color name="tablayout_defult_background">#203950</color>
+
+
+    <!--小布局中textview的颜色-->
+    <color name="view_textview_color">#678198</color>
+    <color name="view_edittext_hint_color">#BBBBBB</color>
+    <color name="view_edittext_text_color">#15293C</color>
+
+
+    <!--登录-->
+    <color name="login_info_background">#3997F1</color>
+    <color name="login_info_hint_color">#84D0EC</color>
+    <color name="login_login_text_color">#304456</color>
+
+    <!--富文本编辑器-->
+    <color name="split_line_color">#f2f2f2</color>
+    <color name="font_color">#181818</color>
+    <color name="mirco_space2">#06c1ae</color>
+    <color name="picker_common_primary">#f3f3f3</color>
+    <color name="picker_pager_bg">#CA000000</color>
+    <color name="picker_text_40">#282828</color>
+    <color name="picker_text_80">#505050</color>
+    <color name="picker_text_120">#787878</color>
+</resources>

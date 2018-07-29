@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <data>
+        <import type="com.lilinzhen.qduamapplication.Bean.Enroll.Enroll"/>
+        <variable
+            name="enroll"
+            type="Enroll"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/project_body_background">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/view_list_background"
+            android:paddingLeft="@dimen/thirteen"
+            android:paddingRight="@dimen/thirteen"
+            android:paddingTop="@dimen/thirteen"
+            android:paddingBottom="@dimen/thirteen"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:imageUrl="@{enroll.student.user.pic}"
+                    android:layout_width="@dimen/thirty_seven"
+                    android:layout_height="@dimen/thirty_seven"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="@dimen/eight"
+                    android:layout_height="0.1dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{enroll.student.name}"
+                            android:textSize="@dimen/thirteen"/>
+                        <View
+                            android:layout_width="@dimen/five"
+                            android:layout_height="0.1dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{enroll.student.logname}"
+                            android:textSize="@dimen/eight"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{enroll.depart.user.name}"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="@dimen/zero"
+                    android:layout_weight="@integer/one"
+                    android:layout_height="0.1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@{enroll.status}"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="@dimen/eight"
+                    android:layout_height="0.1dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:imageUrl="@{enroll.depart.user.pic}"
+                    android:layout_width="@dimen/thirty_seven"
+                    android:layout_height="@dimen/thirty_seven"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two"/>
+    </LinearLayout>
+</layout>

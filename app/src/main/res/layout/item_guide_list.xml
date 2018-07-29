@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.lilinzhen.qduamapplication.Bean.Sys.Guide"/>
+        <variable
+            name="guide"
+            type="Guide"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/eleven"
+            android:paddingRight="@dimen/eleven">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/eight"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:gravity="center"
+                    android:text="Q :"
+                    android:textSize="@dimen/eighteen" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:gravity="center"
+                    android:text="@{guide.question}"
+                    android:textSize="@dimen/eighteen" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/five"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:gravity="center"
+                    android:text="A :"
+                    android:textSize="@dimen/eighteen" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight"
+                    android:gravity="center"
+                    android:text="@{guide.answer}"
+                    android:textSize="@dimen/eighteen"
+                    android:maxLines="2"/>
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/eight"/>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fifteen"
+            android:background="@color/project_body_line_background"/>
+
+    </LinearLayout>  
+    
+</layout>

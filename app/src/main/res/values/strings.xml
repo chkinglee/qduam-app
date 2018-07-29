@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">智慧社团</string>
+
+    <string name="login_title">智慧社团综合管理平台</string>
+    <string name="login_login">登&#160;&#160;录</string>
+    <string name="login_logout">退&#160;&#160;出&#160;&#160;登&#160;&#160;录</string>
+    <string name="login_username_hint">输入用户名</string>
+    <string name="login_password_hint">输入密码</string>
+    <string name="login_forget_password">忘记密码?</string>
+    <string name="login_remember_password">记住密码</string>
+    <string name="login_import_username">请输入账号</string>
+    <string name="login_import_password">请输入密码</string>
+    <string name="login_logging">正在登录，请稍等…</string>
+    <string name="login_logging_failed">登录失败</string>
+    <string name="login_logging_timeout">登录超时或未登录，请重新登录！</string>
+
+    <string name="main_radiobutton_index">首页</string>
+    <string name="main_radiobutton_control">控制台</string>
+    <string name="main_radiobutton_mine">我的</string>
+
+    <string name="acquire_infos">正在获取数据，请稍等…</string>
+    <string name="acquire_list">正在获取数据列表，请稍等…</string>
+    <string name="commit">正在提交数据，请稍等…</string>
+
+    <string name="select_required_hint">请选择（必填）</string>
+    <string name="select_not_required_hint">请选择（非必填）</string>
+    <string name="input_required_hint">请输入文字内容（必填）</string>
+    <string name="input_not_required_hint">请输入文字内容（非必填）</string>
+
+    <string name="user_old_password">原密码</string>
+    <string name="user_new_password">新密码</string>
+
+    <!--富文本编辑器-->
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="picker_image_count">%1$d</string>
+    <string name="picker_images">Images</string>
+    <string name="picker_delete">Delete</string>
+    <string name="picker_done">Done</string>
+    <string name="picker_done_with_count">Done(%1$d/%2$d)</string>
+    <string name="picker_image_index">%1$d/%2$d</string>
+    <string name="picker_undo">Undo</string>
+    <string name="picker_deleted_a_photo">Deleted a photo</string>
+    <string name="picker_confirm_to_delete">Confirm to delete?</string>
+    <string name="picker_yes">Yes</string>
+    <string name="picker_cancel">Cancel</string>
+    <string name="picker_all_image">All Images</string>
+    <string name="picker_over_max_count_tips">Up to %1$d photos can be selected</string>
+
+
+    <!--学生信息-->
+    <string name="student_logname">学号</string>
+    <string name="student_name">姓名</string>
+    <string name="student_sex">性别</string>
+    <string name="student_nation">民族</string>
+    <string name="student_birthday">生日</string>
+    <string name="student_grade">年级</string>
+    <string name="student_department">学院</string>
+    <string name="student_major">专业</string>
+    <string name="student_phone">联系电话</string>
+    <string name="student_qq">QQ</string>
+    <string name="student_dorm">宿舍地址</string>
+
+
+    <!--社团信息-->
+    <string name="assn_logname">社团编号</string>
+    <string name="assn_assnname">社团名称</string>
+    <string name="assn_director">负责人</string>
+    <string name="assn_phone">联系电话</string>
+    <string name="assn_level">社团级别</string>
+
+    <!--部门信息-->
+    <string name="depart_assnname">社团名称</string>
+    <string name="depart_depname">部门名称</string>
+    <string name="depart_logname">部门编号</string>
+    <string name="depart_intro">部门介绍</string>
+
+    <!--部长信息-->
+    <string name="direc_depname">部门名称</string>
+    <string name="direc_level">职务</string>
+    <string name="direc_name">姓名</string>
+    <string name="direc_sex">性别</string>
+    <string name="direc_phone">联系电话</string>
+
+    <!--部员信息-->
+    <string name="member_appraise">评价</string>
+
+
+    <!--文章信息-->
+    <string name="arti_title">文章标题</string>
+    <string name="arti_author">文章作者</string>
+    <string name="arti_time">发表时间</string>
+    <string name="arti_content">文章内容</string>
+    <string name="arti_seca">一级板块</string>
+    <string name="arti_secb">二级版块</string>
+
+    <!--报名信息-->
+    <string name="enroll_status">报名状态</string>
+    <string name="enroll_intro">自我介绍</string>
+    <string name="enroll_charact">特长</string>
+    <string name="enroll_wgive">期望付出</string>
+    <string name="enroll_wgain">期望收获</string>
+
+    <!--会议信息-->
+    <string name="meeting_theme">会议主题</string>
+    <string name="meeting_time">会议时间</string>
+    <string name="meeting_room">会议地点</string>
+    <string name="meeting_member">会议记录人</string>
+    <string name="meeting_shouldnum">应到人数</string>
+    <string name="meeting_eventnum">请假人数</string>
+    <string name="meeting_notnum">无故未到人数</string>
+    <string name="meeting_realnum">实到人数</string>
+    <string name="meeting_note">会议纪要</string>
+    <string name="meeting_note_temp">会议纪要至少包括：\n会议主持人：\n与会部长：\n请假人员名单：\n会议主要内容：\n一、\n1）\n2）\n3）\n二、\n1）\n2）\n3）\n...</string>
+
+    <!--问题反馈-->
+    <string name="sys_problem">问题描述</string>
+    <string name="sys_problem_temp">问题描述至少包括：\n问题发生的场景：\n如：学生登录后点击控制台的加入社团\n问题现象：\n如：已添加的报名信息没有显示在列表里\n顺便留下你的联系方式叭~</string>
+    <string name="sys_guide_q">Q:</string>
+    <string name="sys_guide_a">A:</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myradio="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lilinzhen.qduamapplication.HomePage.Main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="@integer/five_hundred_and_ninty"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/project_body_line_background"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="@integer/fifty"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <com.lilinzhen.qduamapplication.Utils.MyRadioButton
+            android:id="@+id/radiobutton_homepage"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/one"
+            android:text="@string/main_radiobutton_index"
+            android:textSize="@dimen/eleven"
+            android:textColor="@drawable/radiobutton_textcolor"
+            myradio:drawableTop="@drawable/radiobutton_homepage"
+            myradio:drawableSize="@dimen/twenty_five"
+            android:button="@null"
+            android:gravity="center"
+            android:clickable="true"
+            android:paddingTop="@dimen/radiobutton_padding_top"
+            android:checked="true" />
+        <com.lilinzhen.qduamapplication.Utils.MyRadioButton
+            android:id="@+id/radiobutton_control"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/main_radiobutton_control"
+            android:textSize="@dimen/eleven"
+            android:textColor="@drawable/radiobutton_textcolor"
+            myradio:drawableTop="@drawable/radiobutton_control"
+            myradio:drawableSize="@dimen/twenty_five"
+            android:button="@null"
+            android:gravity="center"
+            android:clickable="true"
+            android:paddingTop="@dimen/radiobutton_padding_top" />
+        <com.lilinzhen.qduamapplication.Utils.MyRadioButton
+            android:id="@+id/radiobutton_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/main_radiobutton_mine"
+            android:textSize="@dimen/eleven"
+            android:textColor="@drawable/radiobutton_textcolor"
+            myradio:drawableTop="@drawable/radiobutton_mine"
+            myradio:drawableSize="@dimen/twenty_five"
+            android:button="@null"
+            android:gravity="center"
+            android:clickable="true"
+            android:paddingTop="@dimen/radiobutton_padding_top" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
